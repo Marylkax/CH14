@@ -1,0 +1,53 @@
+<!--Create another page which sells t-shirts, the page should use relevant input types to provide the following functionality
+Collect the users name, email and address
+The size of t-shirt the user needs
+The colour/pattern (possibly more than one) the user chooses -->
+<!DOCTYPE html>
+<html lang="en">
+  <title>T-shirt emporium</title>
+  <body>
+    <h1>T-SHIRT EMPORIUM</h1>
+    <p>Welcome to the T-shirt Emporium. We sell loads of handmade T-shirts</p>
+    <p>
+      To place an order please provide your contact information and shipping
+      details for us.
+    </p>
+
+    <form>
+      <label for="name"> Enter your name:</label>
+      <input type="text" id="name" placeholder="Lady Gaga" />
+      <label for="email"> Enter your email address:</label>
+      <input type="email" id="email" placeholder="Ladygaga@gmail.com" />
+    </form>
+    <p>Enter your delivery address:</p>
+    <textarea id="address" name="address" placeholder="The moon"> </textarea>
+    <p>Pick a size of T-shirt</p>
+    <form>
+      <label for="small">Small</label>
+      <input type="radio" id="small" name="size" value="small" />
+      <label for="medium">Medium</label>
+      <input type="radio" id="medium" name="size" value="medium" />
+      <label for="large">Large</label>
+      <input type="radio" id="large" name="size" value="large" />
+    </form>
+    <h>Customise you T-shirt! Which colour would you like?</p>
+    <form>
+      <label for="colour">Neon green</label>
+      <input type="radio" id="neongreen" name="colour" value="neongreen" />
+      <label for="colour">Hot pink</label>
+      <input type="radio" id="hotpink" name="colour" value="hotpink" />
+      <label for="colour">Pastel blue</label>
+      <input type="radio" id="pastelblue" name="colour" value="pastelblue" />
+    </form>
+    <p>Add some finishing touches. Select some additional accesories</p>
+    <form>
+      <label for="Details">Feathers</label>
+      <input type="radio" id="feathers" name="details" value="feathers" />
+      <label for="colour">Glitter</label>
+      <input type="radio" id="glitter" name="details" value="glitter" />
+      <label for="nothing">No add ons</label>
+      <input type="radio" id="nothing" name="details" value="nothing" />
+    </form>
+    <button type="submit">Submit my order</button>
+  </body>
+</html>
